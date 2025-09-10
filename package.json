@@ -1,0 +1,35 @@
+{
+  "name": "my-shop-backend",
+  "version": "1.0.0",
+  "description": "自家店铺小程序后端",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "docker:build": "docker build -t my-shop-backend .",
+    "docker:run": "docker run -p 5000:5000 --env-file .env my-shop-backend"
+  },
+  "keywords": [
+    "小程序",
+    "电商"
+  ],
+  "author": "你的名字",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.0",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
